@@ -6,15 +6,30 @@ public class Main {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
         return arr;
+
     }
 
     //Задание 1
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
+        int arr1 = 0;
         for (int i = 0; i < arr.length; i++) {
-            int arr1 = 0;
-            arr1 = arr[i];
-                System.out.println("Сумма трат за месяц составила " + arr1 + " рублей ");
-            }
+            arr1 = arr1 + arr[i];
         }
-    }
+        System.out.println("сумма трат за месяц " + arr1 + " рублей");
+        //Задача №2
+        int min= arr[0];
+        int max = arr[29];
+        for (int i = 0; i <arr1; i++) {
+            if (arr[0] > min);
+        }
+        System.out.println("Минимальная сумма трат за день составила  "+ min+ "рублей");
+        for (int i = 0; i < arr1; i++) {
+            if (arr[29] < max) ;
+        }
+        System.out.println("Максимальная сумма трат за день составила"+ max+" рублей");
+
+        }
+
+        }
+
