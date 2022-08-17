@@ -12,35 +12,33 @@ public class Main {
     //Задание 1
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
-        int arr1 = 0;
+        int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            arr1 = arr1 + arr[i];
+            sum = sum + arr[i];
         }
-        System.out.println("сумма трат за месяц " + arr1 + " рублей");
+        System.out.println("сумма трат за месяц " + sum + " рублей");
         //Задача №2
         int min = arr[0];
-        int max = arr[29];
-        for (int i = 0; i < arr1; i++) {
+        int max = arr.length-1;
+        for (int i = 0; i < sum; i++) {
             if (arr[0] > min) ;
         }
         System.out.println("Минимальная сумма трат за день составила  " + min + "рублей");
-        for (int i = 0; i < arr1; i++) {
+        for (int i = 0; i < sum; i++) {
             if (arr[29] < max) ;
         }
         System.out.println("Максимальная сумма трат за день составила" + max + " рублей");
         //Задача №3
-        double arrTwo = arr1;
+        double arrTwo = sum;
         System.out.println("Средняя сумма трат за месяц составила" + arrTwo / arr.length);
         //Задача №4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int[] temp = new int[reverseFullName.length];
-        for (int i = 0; i < reverseFullName.length/2; i++) {
-            temp[reverseFullName.length - 1 - i] = reverseFullName[i];
-            System.out.print(temp);
+        int length = 0;
+        for (int element : reverseFullName) {
+            length++;
+        }
+        for (int i = length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
     }
-
-            
-        }
-
-
+}
