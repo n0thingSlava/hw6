@@ -30,9 +30,9 @@ public class Main {
             if (max < arr[i]) {
                 max = arr[i];
             }
+        }
             System.out.println("Минимальная сумма трат за день составила  " + min + " рублей." + "Максимальная сумма трат за день составила " + max + " рублей.");
             System.out.println();
-
             //Задача №3
             double arrTwo = sum;
             System.out.println("Средняя сумма трат за месяц составила" + arrTwo / arr.length);
@@ -40,8 +40,7 @@ public class Main {
             char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
             int length = 0;
             for (int light = length - 1; light >= 0; light--) {
-                System.out.print(reverseFullName[i]);
+            System.out.print(reverseFullName[light]);
             }
         }
     }
-}
