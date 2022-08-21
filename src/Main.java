@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 public class Main {
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
-        System.out.println(arr[i]);
+        System.out.println(Arrays.toString(arr));
         }
         return arr;
     }
@@ -16,20 +18,20 @@ public class Main {
             sum += arr[i];
         }
         System.out.println("сумма трат за месяц " + sum + " рублей");
+        System.out.println();
         //Задача №2
-        int min = 0;
+        int min = arr[0];
+        int max = arr[29];
         for (int i = 0; i < arr.length-1; i++) {
-            if (arr[i] < arr[i + 1]) {
-                min = min + arr[i];
+            if (min>arr[i]) {
+                min = arr[i];
             }
+            if (max< arr[i]);
+               max=arr[i];
         }
-        System.out.println("Минимальная сумма трат за день составила  " + min + "рублей");
-        int max = 0;
-        for (int i = 0; i < arr.length-1; i++) {
-            if (arr[i] > arr[i+1]) ;
-            max=max+arr[i];
-        }
-        System.out.println("Максимальная сумма трат за день составила" + max + " рублей");
+        System.out.println("Минимальная сумма трат за день составила  " + min + " рублей."+ "Максимальная сумма трат за день составила " + max + " рублей.");
+        System.out.println();
+
         //Задача №3
         double arrTwo = sum;
         System.out.println("Средняя сумма трат за месяц составила" + arrTwo / arr.length);
