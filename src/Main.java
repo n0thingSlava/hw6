@@ -21,7 +21,7 @@ public class Main {
         System.out.println();
         //Задача №2
         int min = arr[0];
-        int max = arr[29];
+        int max = arr.length - 1;
         for (int i = 0; i < arr.length-1; i++) {
             if (min>arr[i]) {
                 min = arr[i];
