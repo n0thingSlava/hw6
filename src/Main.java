@@ -6,8 +6,8 @@ public class Main {
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
-        System.out.println(Arrays.toString(arr));
         }
+        System.out.println(Arrays.toString(arr));
         return arr;
     }
     //Задание 1
