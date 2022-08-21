@@ -39,7 +39,7 @@ public class Main {
             //Задача №4
             char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
             int length = 0;
-            for (int i = length - 1; i >= 0; i--) {
+            for (int light = length - 1; light >= 0; light--) {
                 System.out.print(reverseFullName[i]);
             }
         }
